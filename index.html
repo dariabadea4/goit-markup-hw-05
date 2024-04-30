@@ -21,11 +21,11 @@
         </div>
         <nav class="nav-bar">
               <ul class="nav-list">
-                    <li>
-                        <a href="index.html" class="nav-link">Studio</a>
+                    <li class="actives">
+                        <a href="index.html" class="nav-link active">Studio</a>
                     </li>
-                    <li><a href="portofolio.html" class="nav-link">Portofolio</a></li>
-                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="actives"><a href="portofolio.html" class="nav-link active">Portofolio</a></li>
+                    <li class="actives"><a href="#contacts" class="nav-link active">Contacts</a></li>
                 </ul>
              </nav>
         <div class="contact-links">
@@ -56,7 +56,7 @@
             <div class="container">
                 <div class="hero-content">
             <h1 class="hero-section__title">EFFECTIVE SOLUTIONS FOR<br>YOUR BUSINESS</h1>
-            <button class="hero-button" type="button">Request our service</button>
+            <button class="hero-button" type="button" data-modal-open>Request our service</button>
             </div>
             </div>
         </section>
@@ -107,12 +107,27 @@
                 </ul>
                 <h2 class="style-h2">What we do</h2>
                 <div class="our-work__images">
+                    <div class="boxes">
                     <img src="images/img-1.jpg" alt="Person typing on a keyboard while looking at a diagram" width="370" />
+                    <div class="boxes-text">
+                        <h3>DESKTOP APPS</h3>
+                    </div>
+                    </div>
+                    <div class="boxes">
                     <img src="images/img-2.jpg"
                         alt="Person holding a smartphone in one hand and working on a laptop with the other" width="370" />
+                        <div class="boxes-text">
+                            <h3>MOBILE APPS</h3>
+                        </div>
+                        </div>
+                        <div class="boxes">
                     <img src="images/img-3.jpg"
                         alt="Person holding a pen in their right hand while examining a color picker on a tablet screen"
                         width="370" />
+                        <div class="boxes-text">
+                            <h3>DESIGN SOLUTIONS</h3>
+                        </div>
+                        </div>
                 </div>
             </div>
         </section>
@@ -364,5 +379,11 @@
 </div>
     </section>
 </footer>
+<div data-modal class="is-hidden">
+<div data-modal-content>
+<button data-modal-close type="button">X</button>
+</div>
+</div>
+<script src="modal.js"></script>
 </body>
 </html>
